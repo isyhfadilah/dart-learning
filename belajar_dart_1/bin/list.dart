@@ -6,10 +6,16 @@ void main() {
   print(listInt);
   print(listString);
 
-  var names = <String> [];
-  names.add('Aisyah');
-  names.add('Nur');
-  names.add('Fadilah');
+  // deklarasi langsung, tidak wajib pake tipedata
+  var names = <String> [
+    'Aisyah',
+    'Nur',
+    'Fadilah'
+  ];
+
+  // names.add('Aisyah');
+  // names.add('Nur');
+  // names.add('Fadilah');
 
   print(names);
   print(names.length);
@@ -21,7 +27,7 @@ void main() {
 
   names.removeAt(0);
   print(names);
-  
+
   print(names[0]);
 
 }
