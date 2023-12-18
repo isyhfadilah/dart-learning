@@ -1,4 +1,14 @@
+void sayHello(String name, String Function(String) filter){
+  print('Hello ${filter(name)}');
+}
+
 void main() {
+
+  sayHello('Aisyah Nur Fadilah', (name){
+    return name.toUpperCase();
+  });
+
+  sayHello('Aisyah Nur Fadilah', (name) => name.toLowerCase());
 
   var upperFunction = (String name) {
     return name.toUpperCase();
@@ -11,5 +21,5 @@ void main() {
 
   print(result1);
   print(result2);
-  
+
 }
