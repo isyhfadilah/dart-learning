@@ -4,6 +4,14 @@ class Person {
   String? address;
   final String country = "Indonesia";
 
+  void sayHello(String paramName) {
+    print("Hello $paramName, My Name is $name");
+  }
+
+  String getName() {
+    return "Hello, My Name is $name";
+  }
+
 }
 
 void main () {
