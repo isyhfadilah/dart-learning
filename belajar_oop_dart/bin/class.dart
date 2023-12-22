@@ -26,6 +26,9 @@ void main () {
   print(person1.address);
   print(person1.country);
 
+  person1.sayHello("Aisyah");
+  person1.getName;
+
   Person person2 = Person();
   print(person2);
 
