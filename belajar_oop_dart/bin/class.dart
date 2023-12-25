@@ -14,6 +14,14 @@ class Person {
 
 }
 
+extension SayGoodByeOnPerson on Person {
+
+  void sayGoodBye(String paramName) {
+    print('Good bye $paramName, from $name');
+  }
+
+}
+
 void main () {
 
   // bisa gunakan keyword new, tpi tidak direkomendasikan di dart (v baru)
@@ -28,6 +36,7 @@ void main () {
 
   person1.sayHello("Aisyah");
   person1.getName;
+  person1.sayGoodBye("Sah");
 
   Person person2 = Person();
   print(person2);
