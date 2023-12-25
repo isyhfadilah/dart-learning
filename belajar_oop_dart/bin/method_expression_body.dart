@@ -10,5 +10,14 @@ class Computer {
   //   return 'window';
   // }
   String getOperatingSystem() => "window";
+
+}
+
+void main() {
+
+  var computer = Computer();
+  computer.startup();
+  computer.shutdown();
+  print(computer.getOperatingSystem());
   
 }
