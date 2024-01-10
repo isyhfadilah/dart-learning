@@ -26,7 +26,11 @@ void main() {
     print('Validation Error : ${exception.message}');
   } on Exception catch(exception) {
     print('Error : ${exception.toString()}');
+  } finally {
+    print('Finally program');
   }
+
+  
   print('Selesai');
 
 }
