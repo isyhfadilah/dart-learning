@@ -22,17 +22,20 @@ void main() {
 
   try {
     Validation.validate("aisyah", "h");
-  } on ValidationException  catch(exception) {
+  } on ValidationException  catch(exception, stackTrace) {
     print('Validation Error : ${exception.message}');
-  } on Exception catch(exception) {
+    print('Stack Trace : ${stackTrace.toString()}');
+  } on Exception catch(exception, stackTrace) {
     print('Error : ${exception.toString()}');
+    print('Stack Trace : ${stackTrace.toString()}');
+    ;
   } finally {
     print('Finally program');
   }
 
   // handle all exception
   try {
-    Validation.validate("aisyah", "h");
+    Validation.validate("aisyah", "aisyah");
   } catch(exception) {
     print('Error : ${exception.toString()}');
   } finally {
