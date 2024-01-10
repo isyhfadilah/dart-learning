@@ -30,6 +30,15 @@ void main() {
     print('Finally program');
   }
 
+  // handle all exception
+  try {
+    Validation.validate("aisyah", "h");
+  } catch(exception) {
+    print('Error : ${exception.toString()}');
+  } finally {
+    print('Finally program');
+  }
+
   
   print('Selesai');
 
