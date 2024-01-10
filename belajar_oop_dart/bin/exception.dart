@@ -20,9 +20,9 @@ void main() {
 
   try {
     Validation.validate("aisyah", "");
-  } on ValidationException {
-    print('Validation Error');
+  } on ValidationException  catch(exception) {
+    print('Validation Error : ${exception.message}');
   }
   print('Selesai');
-  
+
 }
