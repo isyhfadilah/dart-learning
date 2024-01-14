@@ -7,5 +7,24 @@ class Sample {
 
   @Deprecated("Do not use this anymore")
   void doNotUseThis() {}
-  
+
+}
+
+class Todo {
+
+  final String message;
+
+  const Todo(this.message);
+
+}
+
+@Todo('Will be implemented next release')
+class Application{
+
+  @Todo('Will be implemented next release')
+  String? name;
+
+  @Todo('Will be implemented next release')
+  void featureA() {}
+
 }
